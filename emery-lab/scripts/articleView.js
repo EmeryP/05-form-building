@@ -75,7 +75,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// This function is called at the bottom of the new.html page. It is called there because we want this function to run separately from the other js pages
 articleView.initNewArticlePage = () => {
 
   // TODO: Ensure the main .tab-content area is revealed. We might add more tabs later or otherwise edit the tab navigation.
@@ -94,7 +94,7 @@ articleView.initNewArticlePage = () => {
 };
 
 articleView.create = () => {
-  
+
   $('#articles > *').remove();
   // TODO: Set up a variable to hold the new article we are creating.
   let objArticle = {
@@ -127,7 +127,7 @@ articleView.create = () => {
 };
 
 // COMMENT: Where is this function called? Why?
-// PUT YOUR RESPONSE HERE
+// This function is called at the bottom of the index.html page. It is called there because we want these functions to run separately from the other js pages
 articleView.initIndexPage = () => {
   articles.forEach(article => $('#articles').append(article.toHtml()));
   articleView.populateFilters();
